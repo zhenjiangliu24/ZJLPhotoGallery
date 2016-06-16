@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C97E27DBF9C25FFF602BA4D /* libPods-ZJLPhotoGalleryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D79DFDCBB753A99DCFD4616 /* libPods-ZJLPhotoGalleryUITests.a */; };
+		8513CDFCE15CC55EBA660A4F /* libPods-ZJLPhotoGalleryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E8E4C60A70EF3F650E744F /* libPods-ZJLPhotoGalleryTests.a */; };
+		CAFF53A81D12385200828AA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53A71D12385200828AA1 /* main.m */; };
+		CAFF53AB1D12385200828AA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53AA1D12385200828AA1 /* AppDelegate.m */; };
+		CAFF53B11D12385200828AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFF53AF1D12385200828AA1 /* Main.storyboard */; };
+		CAFF53B31D12385200828AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFF53B21D12385200828AA1 /* Assets.xcassets */; };
+		CAFF53B61D12385200828AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFF53B41D12385200828AA1 /* LaunchScreen.storyboard */; };
+		CAFF53C11D12385300828AA1 /* ZJLPhotoGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53C01D12385300828AA1 /* ZJLPhotoGalleryTests.m */; };
+		CAFF53CC1D12385300828AA1 /* ZJLPhotoGalleryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53CB1D12385300828AA1 /* ZJLPhotoGalleryUITests.m */; };
+		CAFF53DB1D12388C00828AA1 /* ZJLPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53DA1D12388C00828AA1 /* ZJLPhotoGalleryViewController.m */; };
+		CAFF53E01D12432B00828AA1 /* ZJLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53DE1D12432B00828AA1 /* ZJLCollectionViewCell.m */; };
+		CAFF53E11D12432B00828AA1 /* ZJLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFF53DF1D12432B00828AA1 /* ZJLCollectionViewCell.xib */; };
+		CAFF53E41D1247E300828AA1 /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53E31D1247E300828AA1 /* CellFrameModel.m */; };
+		CAFF53E71D124F4D00828AA1 /* PhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF53E61D124F4D00828AA1 /* PhotoGalleryViewController.m */; };
+		D41ED25C4E8237C3C5864037 /* libPods-ZJLPhotoGallery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F7CF8B8512B601D0717D77 /* libPods-ZJLPhotoGallery.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAFF53BD1D12385300828AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFF539B1D12385200828AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFF53A21D12385200828AA1;
+			remoteInfo = ZJLPhotoGallery;
+		};
+		CAFF53C81D12385300828AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFF539B1D12385200828AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFF53A21D12385200828AA1;
+			remoteInfo = ZJLPhotoGallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F7CF8B8512B601D0717D77 /* libPods-ZJLPhotoGallery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLPhotoGallery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F0CEE8AA27FF6C32250345 /* Pods-ZJLPhotoGalleryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGalleryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGalleryUITests/Pods-ZJLPhotoGalleryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE41424B1E6A12527DF4359 /* Pods-ZJLPhotoGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGallery/Pods-ZJLPhotoGallery.release.xcconfig"; sourceTree = "<group>"; };
+		4C9AC9952326EDA0ABE0ECFF /* Pods-ZJLPhotoGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGalleryTests/Pods-ZJLPhotoGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D79DFDCBB753A99DCFD4616 /* libPods-ZJLPhotoGalleryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLPhotoGalleryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCB365E5A61C2669D3C8A5F /* Pods-ZJLPhotoGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGalleryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGalleryTests/Pods-ZJLPhotoGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAFF53A31D12385200828AA1 /* ZJLPhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLPhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFF53A71D12385200828AA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFF53A91D12385200828AA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAFF53AA1D12385200828AA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAFF53B01D12385200828AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAFF53B21D12385200828AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAFF53B51D12385200828AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAFF53B71D12385200828AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFF53BC1D12385300828AA1 /* ZJLPhotoGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLPhotoGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFF53C01D12385300828AA1 /* ZJLPhotoGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLPhotoGalleryTests.m; sourceTree = "<group>"; };
+		CAFF53C21D12385300828AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFF53C71D12385300828AA1 /* ZJLPhotoGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLPhotoGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFF53CB1D12385300828AA1 /* ZJLPhotoGalleryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLPhotoGalleryUITests.m; sourceTree = "<group>"; };
+		CAFF53CD1D12385300828AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFF53D91D12388C00828AA1 /* ZJLPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLPhotoGalleryViewController.h; sourceTree = "<group>"; };
+		CAFF53DA1D12388C00828AA1 /* ZJLPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLPhotoGalleryViewController.m; sourceTree = "<group>"; };
+		CAFF53DC1D1238DF00828AA1 /* ZJLPhotoGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZJLPhotoGallery-Prefix.pch"; sourceTree = "<group>"; };
+		CAFF53DD1D12432B00828AA1 /* ZJLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLCollectionViewCell.h; sourceTree = "<group>"; };
+		CAFF53DE1D12432B00828AA1 /* ZJLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLCollectionViewCell.m; sourceTree = "<group>"; };
+		CAFF53DF1D12432B00828AA1 /* ZJLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAFF53E21D1247E300828AA1 /* CellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
+		CAFF53E31D1247E300828AA1 /* CellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFrameModel.m; sourceTree = "<group>"; };
+		CAFF53E51D124F4D00828AA1 /* PhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGalleryViewController.h; sourceTree = "<group>"; };
+		CAFF53E61D124F4D00828AA1 /* PhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGalleryViewController.m; sourceTree = "<group>"; };
+		DA6887474993100400DBDBFC /* Pods-ZJLPhotoGalleryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGalleryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGalleryUITests/Pods-ZJLPhotoGalleryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9E8E4C60A70EF3F650E744F /* libPods-ZJLPhotoGalleryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLPhotoGalleryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98ADD311F60C5E544B54EFC /* Pods-ZJLPhotoGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLPhotoGallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLPhotoGallery/Pods-ZJLPhotoGallery.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAFF53A01D12385200828AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41ED25C4E8237C3C5864037 /* libPods-ZJLPhotoGallery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53B91D12385300828AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8513CDFCE15CC55EBA660A4F /* libPods-ZJLPhotoGalleryTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53C41D12385300828AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C97E27DBF9C25FFF602BA4D /* libPods-ZJLPhotoGalleryUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F415363AAC525C91E49D579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F98ADD311F60C5E544B54EFC /* Pods-ZJLPhotoGallery.debug.xcconfig */,
+				4AE41424B1E6A12527DF4359 /* Pods-ZJLPhotoGallery.release.xcconfig */,
+				4C9AC9952326EDA0ABE0ECFF /* Pods-ZJLPhotoGalleryTests.debug.xcconfig */,
+				5CCB365E5A61C2669D3C8A5F /* Pods-ZJLPhotoGalleryTests.release.xcconfig */,
+				30F0CEE8AA27FF6C32250345 /* Pods-ZJLPhotoGalleryUITests.debug.xcconfig */,
+				DA6887474993100400DBDBFC /* Pods-ZJLPhotoGalleryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88D6DEEAFF50801083050CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F7CF8B8512B601D0717D77 /* libPods-ZJLPhotoGallery.a */,
+				E9E8E4C60A70EF3F650E744F /* libPods-ZJLPhotoGalleryTests.a */,
+				4D79DFDCBB753A99DCFD4616 /* libPods-ZJLPhotoGalleryUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFF539A1D12385200828AA1 = {
+			isa = PBXGroup;
+			children = (
+				CAFF53A51D12385200828AA1 /* ZJLPhotoGallery */,
+				CAFF53BF1D12385300828AA1 /* ZJLPhotoGalleryTests */,
+				CAFF53CA1D12385300828AA1 /* ZJLPhotoGalleryUITests */,
+				CAFF53A41D12385200828AA1 /* Products */,
+				6F415363AAC525C91E49D579 /* Pods */,
+				88D6DEEAFF50801083050CD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAFF53A41D12385200828AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF53A31D12385200828AA1 /* ZJLPhotoGallery.app */,
+				CAFF53BC1D12385300828AA1 /* ZJLPhotoGalleryTests.xctest */,
+				CAFF53C71D12385300828AA1 /* ZJLPhotoGalleryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAFF53A51D12385200828AA1 /* ZJLPhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF53A91D12385200828AA1 /* AppDelegate.h */,
+				CAFF53AA1D12385200828AA1 /* AppDelegate.m */,
+				CAFF53AF1D12385200828AA1 /* Main.storyboard */,
+				CAFF53D91D12388C00828AA1 /* ZJLPhotoGalleryViewController.h */,
+				CAFF53DA1D12388C00828AA1 /* ZJLPhotoGalleryViewController.m */,
+				CAFF53DD1D12432B00828AA1 /* ZJLCollectionViewCell.h */,
+				CAFF53DE1D12432B00828AA1 /* ZJLCollectionViewCell.m */,
+				CAFF53DF1D12432B00828AA1 /* ZJLCollectionViewCell.xib */,
+				CAFF53E51D124F4D00828AA1 /* PhotoGalleryViewController.h */,
+				CAFF53E61D124F4D00828AA1 /* PhotoGalleryViewController.m */,
+				CAFF53E21D1247E300828AA1 /* CellFrameModel.h */,
+				CAFF53E31D1247E300828AA1 /* CellFrameModel.m */,
+				CAFF53B21D12385200828AA1 /* Assets.xcassets */,
+				CAFF53B41D12385200828AA1 /* LaunchScreen.storyboard */,
+				CAFF53B71D12385200828AA1 /* Info.plist */,
+				CAFF53A61D12385200828AA1 /* Supporting Files */,
+			);
+			path = ZJLPhotoGallery;
+			sourceTree = "<group>";
+		};
+		CAFF53A61D12385200828AA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF53A71D12385200828AA1 /* main.m */,
+				CAFF53DC1D1238DF00828AA1 /* ZJLPhotoGallery-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAFF53BF1D12385300828AA1 /* ZJLPhotoGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF53C01D12385300828AA1 /* ZJLPhotoGalleryTests.m */,
+				CAFF53C21D12385300828AA1 /* Info.plist */,
+			);
+			path = ZJLPhotoGalleryTests;
+			sourceTree = "<group>";
+		};
+		CAFF53CA1D12385300828AA1 /* ZJLPhotoGalleryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF53CB1D12385300828AA1 /* ZJLPhotoGalleryUITests.m */,
+				CAFF53CD1D12385300828AA1 /* Info.plist */,
+			);
+			path = ZJLPhotoGalleryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAFF53A21D12385200828AA1 /* ZJLPhotoGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFF53D01D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGallery" */;
+			buildPhases = (
+				EF5ABD80BEA7BCA9A8E6196E /* 📦 Check Pods Manifest.lock */,
+				CAFF539F1D12385200828AA1 /* Sources */,
+				CAFF53A01D12385200828AA1 /* Frameworks */,
+				CAFF53A11D12385200828AA1 /* Resources */,
+				9F536260B1B928FFE5BEFDD5 /* 📦 Embed Pods Frameworks */,
+				284F59A68584C56D919D6660 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZJLPhotoGallery;
+			productName = ZJLPhotoGallery;
+			productReference = CAFF53A31D12385200828AA1 /* ZJLPhotoGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAFF53BB1D12385300828AA1 /* ZJLPhotoGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFF53D31D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGalleryTests" */;
+			buildPhases = (
+				94507C4E08C90ECA09B2EC82 /* 📦 Check Pods Manifest.lock */,
+				CAFF53B81D12385300828AA1 /* Sources */,
+				CAFF53B91D12385300828AA1 /* Frameworks */,
+				CAFF53BA1D12385300828AA1 /* Resources */,
+				B04B13464C390C9218995153 /* 📦 Embed Pods Frameworks */,
+				22F098D35779D7731FF8785E /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFF53BE1D12385300828AA1 /* PBXTargetDependency */,
+			);
+			name = ZJLPhotoGalleryTests;
+			productName = ZJLPhotoGalleryTests;
+			productReference = CAFF53BC1D12385300828AA1 /* ZJLPhotoGalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAFF53C61D12385300828AA1 /* ZJLPhotoGalleryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFF53D61D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGalleryUITests" */;
+			buildPhases = (
+				58C2C65DC1821345B14E933C /* 📦 Check Pods Manifest.lock */,
+				CAFF53C31D12385300828AA1 /* Sources */,
+				CAFF53C41D12385300828AA1 /* Frameworks */,
+				CAFF53C51D12385300828AA1 /* Resources */,
+				BAB6FBB540570240E05A7A14 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFF53C91D12385300828AA1 /* PBXTargetDependency */,
+			);
+			name = ZJLPhotoGalleryUITests;
+			productName = ZJLPhotoGalleryUITests;
+			productReference = CAFF53C71D12385300828AA1 /* ZJLPhotoGalleryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAFF539B1D12385200828AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZhongZhongzhong;
+				TargetAttributes = {
+					CAFF53A21D12385200828AA1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D667J2X7L2;
+					};
+					CAFF53BB1D12385300828AA1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D667J2X7L2;
+						TestTargetID = CAFF53A21D12385200828AA1;
+					};
+					CAFF53C61D12385300828AA1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D667J2X7L2;
+						TestTargetID = CAFF53A21D12385200828AA1;
+					};
+				};
+			};
+			buildConfigurationList = CAFF539E1D12385200828AA1 /* Build configuration list for PBXProject "ZJLPhotoGallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAFF539A1D12385200828AA1;
+			productRefGroup = CAFF53A41D12385200828AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAFF53A21D12385200828AA1 /* ZJLPhotoGallery */,
+				CAFF53BB1D12385300828AA1 /* ZJLPhotoGalleryTests */,
+				CAFF53C61D12385300828AA1 /* ZJLPhotoGalleryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAFF53A11D12385200828AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFF53B61D12385200828AA1 /* LaunchScreen.storyboard in Resources */,
+				CAFF53E11D12432B00828AA1 /* ZJLCollectionViewCell.xib in Resources */,
+				CAFF53B31D12385200828AA1 /* Assets.xcassets in Resources */,
+				CAFF53B11D12385200828AA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53BA1D12385300828AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53C51D12385300828AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F098D35779D7731FF8785E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLPhotoGalleryTests/Pods-ZJLPhotoGalleryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		284F59A68584C56D919D6660 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLPhotoGallery/Pods-ZJLPhotoGallery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C2C65DC1821345B14E933C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94507C4E08C90ECA09B2EC82 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F536260B1B928FFE5BEFDD5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLPhotoGallery/Pods-ZJLPhotoGallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B04B13464C390C9218995153 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLPhotoGalleryTests/Pods-ZJLPhotoGalleryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB6FBB540570240E05A7A14 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLPhotoGalleryUITests/Pods-ZJLPhotoGalleryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5ABD80BEA7BCA9A8E6196E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAFF539F1D12385200828AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFF53E41D1247E300828AA1 /* CellFrameModel.m in Sources */,
+				CAFF53AB1D12385200828AA1 /* AppDelegate.m in Sources */,
+				CAFF53E71D124F4D00828AA1 /* PhotoGalleryViewController.m in Sources */,
+				CAFF53E01D12432B00828AA1 /* ZJLCollectionViewCell.m in Sources */,
+				CAFF53DB1D12388C00828AA1 /* ZJLPhotoGalleryViewController.m in Sources */,
+				CAFF53A81D12385200828AA1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53B81D12385300828AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFF53C11D12385300828AA1 /* ZJLPhotoGalleryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFF53C31D12385300828AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFF53CC1D12385300828AA1 /* ZJLPhotoGalleryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAFF53BE1D12385300828AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFF53A21D12385200828AA1 /* ZJLPhotoGallery */;
+			targetProxy = CAFF53BD1D12385300828AA1 /* PBXContainerItemProxy */;
+		};
+		CAFF53C91D12385300828AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFF53A21D12385200828AA1 /* ZJLPhotoGallery */;
+			targetProxy = CAFF53C81D12385300828AA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAFF53AF1D12385200828AA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFF53B01D12385200828AA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAFF53B41D12385200828AA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFF53B51D12385200828AA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAFF53CE1D12385300828AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAFF53CF1D12385300828AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAFF53D11D12385300828AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98ADD311F60C5E544B54EFC /* Pods-ZJLPhotoGallery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZJLPhotoGallery/ZJLPhotoGallery-Prefix.pch";
+				INFOPLIST_FILE = ZJLPhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAFF53D21D12385300828AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE41424B1E6A12527DF4359 /* Pods-ZJLPhotoGallery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZJLPhotoGallery/ZJLPhotoGallery-Prefix.pch";
+				INFOPLIST_FILE = ZJLPhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CAFF53D41D12385300828AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9AC9952326EDA0ABE0ECFF /* Pods-ZJLPhotoGalleryTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZJLPhotoGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJLPhotoGallery.app/ZJLPhotoGallery";
+			};
+			name = Debug;
+		};
+		CAFF53D51D12385300828AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCB365E5A61C2669D3C8A5F /* Pods-ZJLPhotoGalleryTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZJLPhotoGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJLPhotoGallery.app/ZJLPhotoGallery";
+			};
+			name = Release;
+		};
+		CAFF53D71D12385300828AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F0CEE8AA27FF6C32250345 /* Pods-ZJLPhotoGalleryUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ZJLPhotoGalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZJLPhotoGallery;
+			};
+			name = Debug;
+		};
+		CAFF53D81D12385300828AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6887474993100400DBDBFC /* Pods-ZJLPhotoGalleryUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ZJLPhotoGalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZJLPhotoGalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZJLPhotoGallery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAFF539E1D12385200828AA1 /* Build configuration list for PBXProject "ZJLPhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFF53CE1D12385300828AA1 /* Debug */,
+				CAFF53CF1D12385300828AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFF53D01D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFF53D11D12385300828AA1 /* Debug */,
+				CAFF53D21D12385300828AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFF53D31D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFF53D41D12385300828AA1 /* Debug */,
+				CAFF53D51D12385300828AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFF53D61D12385300828AA1 /* Build configuration list for PBXNativeTarget "ZJLPhotoGalleryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFF53D71D12385300828AA1 /* Debug */,
+				CAFF53D81D12385300828AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAFF539B1D12385200828AA1 /* Project object */;
+}
