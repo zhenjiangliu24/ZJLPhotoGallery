@@ -60,9 +60,49 @@
         imageView.tag = 666;
         imageView.clipsToBounds = YES;
         imageView.userInteractionEnabled = YES;
+        if (i == self.index) {
+            imageView.frame = self.currentFrame;
+            [UIView animateWithDuration:0.2 animations:^{
+                imageView.frame = CGRectMake(0, ScreenHeight/4, ScreenWidth, ScreenHeight/2);
+            } completion:^(BOOL finished) {
+                
+            }];
+        }else{
+            imageView.frame = CGRectMake(0, ScreenHeight/4, ScreenWidth, ScreenHeight/2);
+        }
         [imageScrollView addSubview:imageView];
+
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapAction:)];
+        singleTap.numberOfTapsRequired = 1;
+        [imageView addGestureRecognizer:singleTap];
+        
+        UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapAction:)];
+        doubleTap.numberOfTapsRequired = 2;
+        [imageView addGestureRecognizer:doubleTap];
+        
+        [singleTap requireGestureRecognizerToFail:doubleTap];
         
     }
+}
+
+- (void)doubleTapAction:(UITapGestureRecognizer *)tap
+{
+    
+}
+
+- (void)singleTapAction:(UITapGestureRecognizer *)tap
+{
+    UIImageView *imageView = (UIImageView *)tap.view;
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    self.view.backgroundColor = [UIColor clearColor];
+    self.mainScrollView.backgroundColor = [UIColor clearColor];
+    [keyWindow addSubview:imageView];
+    [UIView animateWithDuration:0.2 animations:^{
+        imageView.frame = self.currentFrame;
+    } completion:^(BOOL finished) {
+        [imageView removeFromSuperview];
+    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
