@@ -50,7 +50,18 @@
         imageScrollView.backgroundColor = [UIColor blackColor];
         [self.mainScrollView addSubview:imageScrollView];
         
-        UIImageView *imageView = [UIImageView alloc] ini
+        UIImageView *imageView = [[UIImageView alloc] init];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[self.urlArray objectAtIndex:i]] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+            
+        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            
+        }];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.tag = 666;
+        imageView.clipsToBounds = YES;
+        imageView.userInteractionEnabled = YES;
+        [imageScrollView addSubview:imageView];
+        
     }
 }
 
