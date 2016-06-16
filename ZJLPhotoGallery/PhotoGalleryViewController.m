@@ -7,12 +7,15 @@
 //
 
 #import "PhotoGalleryViewController.h"
+#import "CellFrameModel.h"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface PhotoGalleryViewController ()<UIScrollViewDelegate>{
     CGFloat contentOffsetX;
+    UIScrollView *zoomInScrollView;
 }
 @property (nonatomic, strong) UIScrollView *mainScrollView;
+@property (nonatomic, assign) BOOL isZoomIn;
 @end
 
 @implementation PhotoGalleryViewController
@@ -35,6 +38,7 @@
     [super viewWillAppear:animated];
     [self.mainScrollView setContentOffset:CGPointMake((ScreenWidth+20)*self.index, 0) animated:NO];
     contentOffsetX = self.mainScrollView.contentOffset.x;
+    self.isZoomIn = NO;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -87,7 +91,17 @@
 
 - (void)doubleTapAction:(UITapGestureRecognizer *)tap
 {
-    
+    UIScrollView *imageScrollView = (UIScrollView *)tap.view.superview;
+    if (self.isZoomIn) {
+        self.isZoomIn = NO;
+        zoomInScrollView = nil;
+        [imageScrollView setZoomScale:1.0 animated:YES];
+    }else{
+        CGPoint finger = [tap locationInView:tap.view];
+        [imageScrollView zoomToRect:CGRectMake(finger.x, finger.y, 1, 1) animated:YES];
+        self.isZoomIn = YES;
+        zoomInScrollView = imageScrollView;
+    }
 }
 
 - (void)singleTapAction:(UITapGestureRecognizer *)tap
@@ -103,6 +117,37 @@
         [imageView removeFromSuperview];
     }];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return (UIImageView *)[scrollView viewWithTag:666];
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    UIScrollView *superScroll = (UIScrollView *)scrollView.superview;
+    CGFloat xCenter = scrollView.center.x-superScroll.contentOffset.x;
+    CGFloat yCenter = scrollView.center.y;
+    xCenter = scrollView.contentSize.width>scrollView.frame.size.width?scrollView.contentSize.width/2:xCenter;
+    yCenter = scrollView.contentSize.height>scrollView.frame.size.height?scrollView.contentSize.height/2:yCenter;
+    [[scrollView viewWithTag:666] setCenter:CGPointMake(xCenter, yCenter)];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if (scrollView.tag == 55) {
+        if (contentOffsetX!=scrollView.contentOffset.x) {
+            contentOffsetX = scrollView.contentOffset.x;
+            if (zoomInScrollView) {
+                self.isZoomIn = NO;
+                [zoomInScrollView setZoomScale:1.0 animated:YES];
+            }
+        }
+        self.index = (NSUInteger)(contentOffsetX/(ScreenWidth+20));
+        CellFrameModel *frameModel = [self.frameArray objectAtIndex:self.index];
+        self.currentFrame = CGRectMake(frameModel.frame.origin.x, frameModel.frame.origin.y, frameModel.frame.size.width, frameModel.frame.size.height);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
