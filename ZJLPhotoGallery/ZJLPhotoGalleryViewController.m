@@ -89,13 +89,20 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIView *cover = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    cover.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:cover];
+    
     ZJLCollectionViewCell *cell = (ZJLCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     PhotoGalleryViewController *photoVC = [[PhotoGalleryViewController alloc] init];
     photoVC.urlArray = [self.bigImageURLArray copy];
     photoVC.frameArray = [self.frameArray copy];
     photoVC.index = indexPath.row;
     photoVC.currentFrame = cell.frame;
-    [self presentViewController:photoVC animated:YES completion:nil];
+    photoVC.dismissComplete = ^{
+        [cover removeFromSuperview];
+    };
+    [self presentViewController:photoVC animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

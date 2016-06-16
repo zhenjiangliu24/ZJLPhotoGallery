@@ -121,9 +121,12 @@
     [UIView animateWithDuration:0.2 animations:^{
         imageView.frame = self.currentFrame;
     } completion:^(BOOL finished) {
+        if (self.dismissComplete) {
+            self.dismissComplete();
+        }
         [imageView removeFromSuperview];
     }];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
