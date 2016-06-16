@@ -52,6 +52,7 @@
         imageScrollView.maximumZoomScale = 2.0f;
         imageScrollView.decelerationRate = 0.1f;
         imageScrollView.backgroundColor = [UIColor blackColor];
+        imageScrollView.delegate = self;
         [self.mainScrollView addSubview:imageScrollView];
         
         UIImageView *imageView = [[UIImageView alloc] init];
@@ -92,7 +93,13 @@
 - (void)doubleTapAction:(UITapGestureRecognizer *)tap
 {
     UIScrollView *imageScrollView = (UIScrollView *)tap.view.superview;
-    if (self.isZoomIn) {
+    if (imageScrollView.zoomScale == imageScrollView.maximumZoomScale) {
+        self.isZoomIn = NO;
+        zoomInScrollView = nil;
+        [imageScrollView setZoomScale:1.0 animated:YES];
+        return;
+    }
+    if(self.isZoomIn){
         self.isZoomIn = NO;
         zoomInScrollView = nil;
         [imageScrollView setZoomScale:1.0 animated:YES];
